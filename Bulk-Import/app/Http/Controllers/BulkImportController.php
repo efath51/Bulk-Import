@@ -250,16 +250,6 @@ class BulkImportController extends Controller
     }
 
 
-    // private function DatasetPath(string $filename): string
-    // {
-    //     $path = 'temp-datasets/' . $filename;
-
-    //     abort_unless(Storage::disk('local')->exists($path), 404, 'File not found.');
-
-    //     return $path;
-    // }
-
-
     public function deleteDataset(string $filename): RedirectResponse
     {
         Storage::disk('local')->delete('temp-datasets/' . $filename);
