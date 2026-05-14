@@ -117,33 +117,7 @@ Status: active
 Description: Some text.
 ```
 
----
 
-## Reusing for Other Models
-
-1. Use the `HandlesBulkImport` trait in your controller
-2. Call `$this->handleBulkFlow('bulk_import')` inside your store method when `is_bulk` is true
-3. Point the Vue wizard to your new save route
-
-```php
-use App\Traits\HandlesBulkImport;
-
-class ProductController extends Controller
-{
-    use HandlesBulkImport;
-
-    public function store(Request $request)
-    {
-        // ... save logic ...
-
-        if ($request->boolean('is_bulk')) {
-            return $this->handleBulkFlow('bulk_import');
-        }
-
-        return redirect()->route('products.index');
-    }
-}
-```
 
 ---
 
