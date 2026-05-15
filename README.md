@@ -1,5 +1,5 @@
 # BulkImporter
-
+![Bulk Importer Screenshot](https://raw.githubusercontent.com/efath51/Bulk-Import/main/Bulk-Import/gg.png)
 A Laravel + Vue 3 tool to import structured data from PDF or DOCX files into your database — one item at a time with image attachment support.
 
 ---
@@ -9,7 +9,7 @@ A Laravel + Vue 3 tool to import structured data from PDF or DOCX files into you
 Manually entering large amounts of test or production data through a form is slow and error-prone. This tool lets you prepare your data in a document, upload it, and walk through each record to attach an image and save.
 
 ---
-![Bulk Importer Screenshot](assets/demo.png)
+
 
 ## Features
 
